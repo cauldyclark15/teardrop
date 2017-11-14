@@ -1,0 +1,17 @@
+body,
+html {
+  height: 100%;
+  display: grid;
+  font-family: "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell,
+    "Helvetica Neue", sans-serif;
+}
+
+.login-form {
+  margin: 300px auto 0;
+  width: 300px;
+  max-width: 400px;
+  z-index: 100;
+  margin: 0 auto;
+  padding-top: 70px;
+  text-align: center;
+}
