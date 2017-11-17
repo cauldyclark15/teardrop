@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { withRouter } from "react-router-dom";
 
 class Content extends Component {
   state = {
@@ -6,11 +7,17 @@ class Content extends Component {
   };
 
   componentDidMount() {
-    fetch("https://jsonplaceholder.typicode.com/users")
-      .then(response => response.json())
-      .then((itemsAsync = []) => {
-        return this.setState({ items: itemsAsync });
-      });
+    const authenticated = localStorage.getItem("auth");
+
+    if (authenticated) {
+      fetch("https://jsonplaceholder.typicode.com/users")
+        .then(response => response.json())
+        .then((itemsAsync = []) => {
+          return this.setState({ items: itemsAsync });
+        });
+    } else {
+      this.props.history.push("/login");
+    }
   }
 
   handleSubmit = event => {
@@ -29,7 +36,7 @@ class Content extends Component {
 
   handleLogout = () => {
     localStorage.removeItem("auth");
-    return window.location.replace("/login");
+    this.props.history.push("/login");
   };
 
   render() {
@@ -120,4 +127,4 @@ class Content extends Component {
   }
 }
 
-export default Content;
+export default withRouter(Content);
