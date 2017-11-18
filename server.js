@@ -8,7 +8,7 @@ const { template } = require("lodash");
 const fs = require("fs");
 const App = require("./src/App").default;
 
-const baseTemplate = fs.readFileSync("./public/index.html");
+const baseTemplate = fs.readFileSync("./index.html");
 const appTemplate = template(baseTemplate);
 const port = 9000;
 
