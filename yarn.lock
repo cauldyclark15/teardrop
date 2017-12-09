@@ -2,6 +2,10 @@
 # yarn lockfile v1
 
 
+"@types/react@*":
+  version "16.0.28"
+  resolved "https://registry.yarnpkg.com/@types/react/-/react-16.0.28.tgz#eb0b31272528da8f20477ec27569c4f767315b33"
+
 abab@^1.0.3:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/abab/-/abab-1.0.4.tgz#5faad9c2c07f60dd76770f71cf025b62a63cfd4e"
@@ -5161,6 +5165,13 @@ react-dom@^16.1.0:
 react-error-overlay@^3.0.0:
   version "3.0.0"
   resolved "https://registry.yarnpkg.com/react-error-overlay/-/react-error-overlay-3.0.0.tgz#c2bc8f4d91f1375b3dad6d75265d51cd5eeaf655"
+
+react-google-login@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.yarnpkg.com/react-google-login/-/react-google-login-3.0.2.tgz#b08752e0ba0bb334ae5580ed8acd4c6dadb823a8"
+  dependencies:
+    "@types/react" "*"
+    prop-types "^15.6.0"
 
 react-router-dom@^4.2.2:
   version "4.2.2"

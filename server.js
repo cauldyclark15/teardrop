@@ -10,7 +10,7 @@ const App = require("./src/App").default;
 
 const baseTemplate = fs.readFileSync("./index.html");
 const appTemplate = template(baseTemplate);
-const port = 9000;
+const port = 3000;
 
 const server = express();
 

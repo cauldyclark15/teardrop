@@ -1,9 +1,9 @@
-import React from "react";
-import { Switch, Route } from "react-router-dom";
+import React from 'react';
+import { Switch, Route } from 'react-router-dom';
 
-import Login from "./Login";
-import Content from "./Content";
-import NotFound from "./NotFound";
+import Login from './Login';
+import Content from './Content';
+import NotFound from './NotFound';
 
 const App = ({ authenticated }) => (
   <Switch>
