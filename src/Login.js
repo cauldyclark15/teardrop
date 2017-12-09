@@ -8,7 +8,7 @@ const DISCOVERY_DOCS = [
 const SCOPES = 'https://www.googleapis.com/auth/gmail.readonly';
 
 class Login extends Component {
-  state = { error: '', isSignedIn: false };
+  state = { error: '', isSignedIn: false, test: false };
 
   componentDidMount() {
     this.handleClientLoad();
